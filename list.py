@@ -6,12 +6,13 @@
 # one at a time until they enter -1 to signal the end of the list. If the user enters a grade outside of
 # the range 0-100, the program will display an error message and clear the list of grades.
 
+
 def calculate_average(list_of_grade):
     """Calculate the average of a list of grades"""
     # Initialize sum to 0 and get the length of the list
     sum = 0
     length = len(list_of_grade)
-    
+
     # If the list is empty, return -1
     if length == 0:
         return -1
@@ -23,11 +24,12 @@ def calculate_average(list_of_grade):
         average = sum / length
         return average
 
+
 def main():
     # Initialize the list of grades and the grade variable
     list_of_grade = []
     grade = None
-    
+
     # Keep prompting the user for grades until they enter -1
     while grade != -1:
         try:
@@ -51,6 +53,7 @@ def main():
         # If the user didn't enter a number, display an error message
         except ValueError:
             print("Please enter a number")
+
 
 if __name__ == "__main__":
     main()
